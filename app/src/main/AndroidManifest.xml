@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Polio.Protection">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".team.Map.TeamMap"></activity>
+        <activity android:name=".admin.Map.AdminMap"></activity>
+        <activity android:name=".admin.ViewResult.AdminViewResultChildrenVaccination" />
+        <activity android:name=".admin.ViewResult.AdminViewResultChildren" />
+        <activity android:name=".admin.ViewResult.AdminViewResult" />
+        <activity android:name=".admin.Children.AdminChildrenVaccinationDeatils" />
+        <activity android:name=".admin.Children.AdminChildrenVaccinationInfo" />
+        <activity android:name=".admin.Children.AdminChildrenInfo" />
+        <activity android:name=".admin.Children.Children" />
+        <activity android:name=".team.CheckReport.TeamCheckReportChildren" />
+        <activity android:name=".team.CheckReport.TeamCheckReport" />
+        <activity android:name=".admin.ViewResult.AdminViewResultSelectCampaign" />
+        <activity android:name=".admin.Campaign.AdminCampaignInfo" />
+        <activity android:name=".admin.Teams.AdminTeamsInfo" />
+        <activity android:name=".admin.Worker.AdminWorkerInfo" />
+        <activity android:name=".team.MarkChildren.TeamMarkChildrenMark" />
+        <activity android:name=".team.MarkChildren.TeamMarkChildrenSearch" />
+        <activity android:name=".team.MarkChildren.TeamMarkChildrenCheckCampaign" />
+        <activity android:name=".team.CheckReport.TeamCheckReportCheckCampaign" />
+        <activity android:name=".team.Children.TeamChildren" />
+        <activity android:name=".admin.Teams.AdminTeams" />
+        <activity android:name=".admin.Worker.AdminWorker" />
+        <activity android:name=".admin.Worker.AdminAddUpdateWorker" />
+        <activity android:name=".admin.Campaign.AdminCampaign" />
+        <activity android:name=".admin.Teams.AdminAddUpdateTeams" />
+        <activity android:name=".Error" />
+        <activity android:name=".team.Children.TeamAddUpdateChildren" />
+        <activity android:name=".admin.Campaign.AdminAddUpdateCampaign" />
+        <activity android:name=".Signup" />
+        <activity android:name=".team.Info.TeamInfo" />
+        <activity android:name=".team.ColdChainBox.TeamColdChainBox" />
+        <activity
+            android:name=".team.Teamhome"
+            android:label="@string/title_activity_team_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admin.Adminhome"
+            android:label="@string/title_activity_admin_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Login" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

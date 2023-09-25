@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:text="Add New Team"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/backsign"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_arrow_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/team_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/team_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/team_two_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Retype Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/team_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Team ID"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/area_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Area ID"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="@color/gray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_box"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_team_btm"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_dialog"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

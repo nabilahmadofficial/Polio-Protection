@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_view_all_result"
+            android:icon="@drawable/ic_view_all_result"
+            android:title="@string/menu_view_all_result" />
+        <item
+            android:id="@+id/nav_menu_campaign"
+            android:icon="@drawable/ic_check_team_work"
+            android:title="@string/menu_campaign" />
+        <item
+            android:id="@+id/nav_menu_worker"
+            android:icon="@drawable/ic_add_drop_childern"
+            android:title="@string/menu_worker" />
+        <item
+            android:id="@+id/nav_menu_team"
+            android:icon="@drawable/ic_assign_team_work"
+            android:title="@string/menu_team" />
+        <item
+            android:id="@+id/nav_menu_children"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/menu_children" />
+    </group>
+
+    <item tools:ignore="MenuTitle">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+
+</menu>

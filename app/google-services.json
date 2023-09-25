@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "286399870105",
+    "firebase_url": "https://polio-f3082.firebaseio.com",
+    "project_id": "polio-f3082",
+    "storage_bucket": "polio-f3082.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286399870105:android:c19a79ab29397bc205b408",
+        "android_client_info": {
+          "package_name": "com.Polio.Protection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286399870105-h34qfsm6vtokp1muik800ark84ccu7jr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABhfw2rrf7D_b41uj-EmUSkh4QUnY2_dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286399870105-h34qfsm6vtokp1muik800ark84ccu7jr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

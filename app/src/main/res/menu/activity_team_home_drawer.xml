@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mark_children"
+            android:icon="@drawable/ic_mark_childern"
+            android:title="@string/menu_mark_childern" />
+        <item
+            android:id="@+id/nav_add_drop_children"
+            android:icon="@drawable/ic_add_drop_childern"
+            android:title="@string/menu_add_drop" />
+        <item
+            android:id="@+id/nav_cold_chain_box"
+            android:icon="@drawable/ic_cold_chain_box"
+            android:title="@string/menu_cold_chain" />
+        <item
+            android:id="@+id/nav_check_report"
+            android:icon="@drawable/ic_view_all_result"
+            android:title="@string/menu_check_report" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="@string/menu_team_info" />
+
+    </group>
+    <item tools:ignore="MenuTitle">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>
